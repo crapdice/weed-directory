@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-retro-bg: #0a110a;
+  /* Slightly greener dark for 90s feel */
+  --color-hot-pink: #ff00ff;
+  /* Pure magenta */
+  --color-lime-green: #00ff00;
+  /* Pure green */
+  --color-neo-gray: #555555;
+  --font-mono: "MS Sans Serif", "Arial", sans-serif;
+}
+
+:root {
+  background-color: #000000;
+  color: #dddddd;
+  font-family: var(--font-mono);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+.directory-box {
+  border: 1px solid #333333;
+  background: #050505;
+}
+
+.directory-header {
+  border-bottom: 1px solid #333333;
+  background: #1a1a1a;
+  color: var(--color-hot-pink);
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 4px 8px;
+}
+
+.stats-bar {
+  border-top: 2px solid #333333;
+  color: var(--color-neo-gray);
+  letter-spacing: 1px;
+}
+
+/* Link underline effect */
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  border-radius: 0;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 0;
+}
+
+/* Custom Scrollbar - Retro Style */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border: 2px solid #111111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-lime-green);
+}
