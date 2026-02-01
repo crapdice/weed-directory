@@ -1,0 +1,10 @@
+{
+    "buildCommand": "npm run build",
+    "installCommand": "pip install -r ../requirements.txt && npm install",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
