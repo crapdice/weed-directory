@@ -1,0 +1,11 @@
+{
+    "buildCommand": "cd illinois-marijuana && npm run build",
+    "installCommand": "pip install -r requirements.txt && cd illinois-marijuana && npm install",
+    "outputDirectory": "illinois-marijuana/dist",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/illinois-marijuana/index.html"
+        }
+    ]
+}
