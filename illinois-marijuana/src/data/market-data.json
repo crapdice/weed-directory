@@ -5,7 +5,8 @@
         {
             "name": "Ascend Illinois",
             "license_type": "Cultivation Center",
-            "facility_location": "Barry",
+            "facility_location": "Barry (310th Ave Facility)",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@ascend.wellness"
@@ -20,7 +21,8 @@
         {
             "name": "Ataraxia (Verano Holdings)",
             "license_type": "Cultivation Center",
-            "facility_location": "Albion",
+            "facility_location": "Albion (884 Industrial Dr)",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@veranobrands"
@@ -39,7 +41,8 @@
         {
             "name": "Bedford Grow",
             "license_type": "Cultivation Center",
-            "facility_location": "Bedford Park",
+            "facility_location": "Bedford Park (5550 70th Pl)",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@bedfordgrow"
@@ -53,10 +56,11 @@
             "name": "Cresco Labs",
             "license_type": "Cultivation Center",
             "facility_location": [
-                "Joliet",
-                "Lincoln",
-                "Kankakee"
+                "Joliet (3301 Centerpoint Way)",
+                "Lincoln (1432 1800th St)",
+                "Kankakee (3625 S State Route 45/52)"
             ],
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@crescocannabis"
@@ -74,7 +78,8 @@
         {
             "name": "Curative Health (Columbia Care/Cannabist)",
             "license_type": "Cultivation Center",
-            "facility_location": "Aurora",
+            "facility_location": "Aurora (2229 Diehl Rd)",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@eat_drink_high"
@@ -92,9 +97,10 @@
             "name": "Green Thumb Industries (GTI)",
             "license_type": "Cultivation Center",
             "facility_location": [
-                "Oglesby",
-                "Rock Island"
+                "Oglesby (110 East 4th Rd)",
+                "Rock Island (8221 51st St West)"
             ],
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@rythm_official"
@@ -113,6 +119,7 @@
             "name": "Ieso",
             "license_type": "Cultivation Center",
             "facility_location": "Murphysboro",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@iesocannabis"
@@ -126,7 +133,8 @@
         {
             "name": "In Grown Farms",
             "license_type": "Cultivation Center",
-            "facility_location": "Freeport",
+            "facility_location": "Freeport (3597 E Colby Rd)",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@thebotanist_il"
@@ -140,7 +148,8 @@
         {
             "name": "Nature’s Grace & Wellness",
             "license_type": "Cultivation Center",
-            "facility_location": "Vermont",
+            "facility_location": "Vermont (230 E Van Fossen Rd)",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@naturesgrace_il"
@@ -156,7 +165,8 @@
         {
             "name": "NuEra (NPI Hillcrest)",
             "license_type": "Cultivation Center",
-            "facility_location": "Rochelle",
+            "facility_location": "Rochelle (16280 E Twombly Rd)",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@nueracannabis"
@@ -170,7 +180,8 @@
         {
             "name": "PharmaCann",
             "license_type": "Cultivation Center",
-            "facility_location": "Dwight",
+            "facility_location": "Hillcrest (16280 E Twombly Rd)",
+            "status": "Operational - Consolidated Jan 2026",
             "head_grower": "James Walker (Lead)",
             "social_media": {
                 "instagram": "@matter_il"
@@ -186,6 +197,7 @@
             "name": "Progressive Treatment Solutions (PTS)",
             "license_type": "Cultivation Center",
             "facility_location": "East St. Louis",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@pts_il"
@@ -200,7 +212,11 @@
         {
             "name": "Revolution Cannabis",
             "license_type": "Cultivation Center",
-            "facility_location": "Delavan",
+            "facility_location": [
+                "Delavan (1 Revolution Way)",
+                "Barry (1 310th Ave)"
+            ],
+            "status": "Operational",
             "head_grower": "Dustin Shroyer",
             "social_media": {
                 "instagram": "@revcanna"
@@ -217,6 +233,7 @@
             "name": "Shelby County Community Services (SCCS)",
             "license_type": "Cultivation Center",
             "facility_location": "Shelbyville",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@sccs_il"
@@ -228,7 +245,8 @@
         {
             "name": "Wellness Group Pharms (Aeriz)",
             "license_type": "Cultivation Center",
-            "facility_location": "Anna",
+            "facility_location": "Anna (690 Lick Creek Rd)",
+            "status": "Operational",
             "head_grower": "Zack Bigg",
             "social_media": {
                 "instagram": "@aerizusa"
@@ -245,6 +263,7 @@
             "name": "IC Collective",
             "license_type": "Craft Grower",
             "facility_location": "Cary",
+            "status": "Operational",
             "head_grower": "Ben (The Scientist)",
             "social_media": {
                 "instagram": "@iccollective"
@@ -257,6 +276,7 @@
             "name": "Nez",
             "license_type": "Craft Grower",
             "facility_location": "Cary",
+            "status": "Operational",
             "head_grower": "Nez",
             "social_media": {
                 "instagram": "https://www.instagram.com/nez.craft/",
@@ -271,6 +291,7 @@
             "name": "Galaxy Labs",
             "license_type": "Craft Grower",
             "facility_location": "Richton Park",
+            "status": "Operational",
             "head_grower": "Rick Ringold",
             "social_media": {
                 "instagram": "@galaxylabs.il"
@@ -284,6 +305,7 @@
             "name": "Cannect Wellness",
             "license_type": "Craft Grower",
             "facility_location": "Franklin Park",
+            "status": "Operational",
             "head_grower": "Jake Heller",
             "social_media": {
                 "instagram": "@cannectwellness"
@@ -296,6 +318,7 @@
             "name": "11th Level (Ümi Farms)",
             "license_type": "Craft Grower",
             "facility_location": "Rolling Meadows",
+            "status": "Operational",
             "head_grower": "Akele Parnell",
             "social_media": {
                 "instagram": "https://www.instagram.com/11thlevel.il/",
@@ -310,6 +333,7 @@
             "name": "Northern Heights",
             "license_type": "Craft Grower",
             "facility_location": "Cary",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@northernheightsil"
@@ -322,6 +346,7 @@
             "name": "Oregonix Farms",
             "license_type": "Craft Grower",
             "facility_location": "Huntley",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@oregonixfarms"
@@ -334,6 +359,7 @@
             "name": "Flora Arbor",
             "license_type": "Craft Grower",
             "facility_location": "Plainfield",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@floraarbor"
@@ -346,6 +372,7 @@
             "name": "Drecisco Farms",
             "license_type": "Craft Grower",
             "facility_location": "Marengo",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@dreciscofarms"
@@ -358,6 +385,7 @@
             "name": "Legacy Cannabis",
             "license_type": "Craft Grower",
             "facility_location": "Litchfield",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "https://www.instagram.com/cementyourlegacy/",
@@ -371,7 +399,8 @@
         {
             "name": "Curaleaf IL",
             "license_type": "Cultivation Center",
-            "facility_location": "Centralia",
+            "facility_location": "Centralia (820 Industrial Park Dr)",
+            "status": "Operational",
             "head_grower": "Not Publicly Listed",
             "social_media": {
                 "instagram": "@curaleaf.usa"
@@ -382,6 +411,21 @@
                 "Select",
                 "Find",
                 "JAMS"
+            ]
+        },
+        {
+            "name": "4Front Ventures",
+            "license_type": "Cultivation Center",
+            "facility_location": "Matteson (5500 Adams St)",
+            "status": "Operational",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@missiondispensaries"
+            },
+            "brands": [
+                "Legends",
+                "Mini MZ",
+                "Crystal Clear"
             ]
         }
     ],
