@@ -1,24 +1,29 @@
-# Illinois Cannabis Market Directory 2026
+# Deep Resin: The Metaphysical Directory of Illinois Cannabis (2026)
 
-A premium, interactive landing page providing a comprehensive overview of the Illinois marijuana cultivation landscape.
+A culture-forward, high-fidelity digital archive tracking the industrial giants and boutique wizards of the Illinois cannabis landscape.
 
-## Features
-- **Modern Aesthetic**: High-fidelity dark mode design with glassmorphism and subtle animations.
-- **Operator Directory**: Detailed listings for all Cultivation Centers and Craft Growers in Illinois.
-- **Real-time Filtering**: Search by brand or operator name, and filter by license type.
-- **Brand Portfolios**: Quick view of all brands associated with each cultivator.
-- **Market Stats**: Key metrics on the current state of the Illinois market.
+## 🌀 Visual Identity
+- **Weird-Luxe Aesthetic**: A 1970s psychedelic grit meets 2026 culture-forward logic.
+- **Dynamic Elements**: Liquid-ripple micro-interactions, 70s film-stock grain, and staggering "Sticker-Wall" masonry grids.
+- **Glassmorphism**: High-end frosted glassware effects for internal operator cards.
+- **QC Compliance**: All data is verified through a custom "Quality Control" stamp system to ensure source-of-truth accuracy.
 
-## Tech Stack
-- **React 19** + **Vite**
-- **Tailwind CSS v4**
-- **Lucide Icons**
-- **TypeScript**
+## 🛠️ Technological Frequency
+- **Core**: React 19 + Vite + TypeScript
+- **Styling**: Tailwind CSS v4 + Syne/Outfit Typography
+- **Verification**: Hybrid Python validator for programmatic enforcement of the "Three Final Laws."
 
-## Getting Started
-1. Install dependencies: `npm install`
-2. Start the development server: `npm run dev`
-3. Build for production: `npm run build`
+## 🚀 Terminal Execution
+```bash
+# Calibrate frequencies
+npm install
 
-## Data Source
-Market data as of February 2026, based on public licensing records from the State of Illinois.
+# Initialize development pulse
+npm run dev
+
+# Manifest production build
+npm run build
+```
+
+## 🛡️ Genetic Integrity
+Data verified as of **February 2026**. Programmatic compliance via `validate_data.py` ensures all (Partner) suffixes and social links are active and authentic.
