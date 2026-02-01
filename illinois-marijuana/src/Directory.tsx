@@ -17,7 +17,7 @@ interface Cultivator {
   social_media: SocialMedia;
 }
 
-function App() {
+function Directory() {
   const [searchTerm, setSearchTerm] = useState('');
 
   const filteredCultivators = useMemo((): Cultivator[] => {
@@ -146,4 +146,4 @@ function App() {
   );
 }
 
-export default App;
+export default Directory;
