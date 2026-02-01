@@ -90,14 +90,12 @@ function App() {
               {cat.items.map((item, i) => (
                 <div key={i} className="text-[11px] leading-relaxed">
                   <div className="mb-1">
-                    <a
-                      href={item.social_media.website || "#"}
+                    <Link
+                      to={`/cultivators/${item.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
                       className="text-lime-green font-bold text-sm hover:text-hot-pink hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                     <span className="text-neo-gray ml-2">
                       - {Array.isArray(item.facility_location) ? item.facility_location[0] : item.facility_location}, IL
                     </span>
