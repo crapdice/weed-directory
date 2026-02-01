@@ -366,6 +366,22 @@
                 "Legacy",
                 "EVOL"
             ]
+        },
+        {
+            "name": "Curaleaf IL",
+            "license_type": "Cultivation Center",
+            "facility_location": "Centralia",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@curaleaf.usa"
+            },
+            "brands": [
+                "Curaleaf",
+                "Grassroots",
+                "Select",
+                "Find",
+                "JAMS"
+            ]
         }
     ],
     "famous_growers_spotlight": [
