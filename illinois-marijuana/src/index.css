@@ -1,110 +1,77 @@
 @import "tailwindcss";
 
 @theme {
-  --color-luxe-midnight: #0a0b10;
-  --color-weird-lime: #b7ff00;
-  --color-trippy-pink: #ff00d4;
-  --font-serif: "Syne", serif;
-  --font-sans: "Outfit", sans-serif;
-
-  @keyframes ripple {
-
-    0%,
-    100% {
-      transform: scale(1) rotate(0deg);
-      filter: hue-rotate(0deg);
-    }
-
-    50% {
-      transform: scale(1.02) rotate(1.5deg);
-      filter: hue-rotate(15deg);
-    }
-  }
+  --color-retro-bg: #0a110a;
+  /* Slightly greener dark for 90s feel */
+  --color-hot-pink: #ff00ff;
+  /* Pure magenta */
+  --color-lime-green: #00ff00;
+  /* Pure green */
+  --color-neo-gray: #555555;
+  --font-mono: "MS Sans Serif", "Arial", sans-serif;
 }
 
 :root {
-  background-color: var(--color-luxe-midnight);
-  color: #f8fafc;
-  overflow-x: hidden;
+  background-color: #000000;
+  color: #dddddd;
+  font-family: var(--font-mono);
 }
 
 body {
   margin: 0;
-  font-family: var(--font-sans);
-  background: var(--color-luxe-midnight);
-  position: relative;
+  padding: 0;
+  background-color: #000000;
 }
 
-/* 1970s Film Stock Noise Filter */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
-  opacity: 0.15;
-  pointer-events: none;
-  z-index: 9999;
-  filter: contrast(150%) brightness(100%);
+.directory-box {
+  border: 1px solid #333333;
+  background: #050505;
 }
 
-.glass-card {
-  background: rgba(10, 11, 16, 0.4);
-  backdrop-filter: blur(20px);
-  border: 4px solid rgba(183, 255, 0, 0.1);
-  box-shadow: 8px 8px 0px 0px rgba(183, 255, 0, 0.05);
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.glass-card:hover {
-  border-color: var(--color-weird-lime);
-  box-shadow: 4px 4px 0px 0px var(--color-trippy-pink);
-  animation: ripple 6s ease-in-out infinite;
-  z-index: 50;
-}
-
-.gold-gradient-text {
-  background: linear-gradient(135deg, var(--color-weird-lime) 0%, var(--color-trippy-pink) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 10px rgba(183, 255, 0, 0.3));
-}
-
-.hero-overlay {
-  background: radial-gradient(circle at center, transparent, var(--color-luxe-midnight) 80%);
-}
-
-/* Liquid Psych Typography */
-h1,
-h2,
-.breeder-title {
-  font-weight: 800;
-  letter-spacing: -0.05em;
+.directory-header {
+  border-bottom: 1px solid #333333;
+  background: #1a1a1a;
+  color: var(--color-hot-pink);
+  font-size: 0.7rem;
+  font-weight: bold;
   text-transform: uppercase;
-  font-family: var(--font-serif);
+  padding: 4px 8px;
 }
 
-.qc-stamp {
-  font-family: 'Courier New', Courier, monospace;
-  background: rgba(183, 255, 0, 0.1);
-  border: 2px dashed var(--color-weird-lime);
-  color: var(--color-weird-lime);
-  transform: rotate(-3deg);
-  box-shadow: 2px 2px 0px black;
+.stats-bar {
+  border-top: 2px solid #333333;
+  color: var(--color-neo-gray);
+  letter-spacing: 1px;
 }
 
-@keyframes slow-zoom {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.15);
-  }
+/* Link underline effect */
+a:hover {
+  text-decoration: underline;
 }
 
-.animate-slow-zoom {
-  animation: slow-zoom 30s ease-out forwards;
+input {
+  border-radius: 0;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 0;
+}
+
+/* Custom Scrollbar - Retro Style */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border: 2px solid #111111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-lime-green);
 }

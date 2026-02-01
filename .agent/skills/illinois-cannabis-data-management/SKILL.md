@@ -34,19 +34,33 @@ This skill enables the agent to accurately manage, display, and filter Illinois 
 - **Cross-Referencing:** If a user searches for a strain in `legendary_strains`, Antigravity should automatically highlight the parent `cultivator` card on the landing page.
 - **UI Tooltip:** Strains in the `legendary_strains` array should trigger a secondary 'Grower Notes' tooltip containing the `profile` text.
 
-## Final Laws
-**Law 1: No brand shall be rendered without its parent licensee.**  
-Every instance of a brand (chip, tag, or label) must be accompanied by its parent cultivator name, ensuring full regulatory and commercial transparency.
+## UI/UX Protocol: SEO Directory (Zero-Scroll)
+- **Layout:** 3-column grid, text-heavy, category-based.
+- **Palette:** Background `#0A0A0A`, Headers `Hot Pink` (#FF69B4), Links `Lime Green` (#32CD32), Sub-text `#666666`.
+- **Interaction:** No scrolling allowed for the main directory core. Use 'Glassmorphism' hover-previews for deep brand data.
+- **Typography:** 12px System-Mono (Courier/SF Mono) for directory links. 1px solid borders for category containment.
 
-**Law 2: (Partner) suffix MUST trigger the Produced by [Licensee] tooltip.**  
-Any brand string containing the literal `(Partner)` suffix must be stripped for display but must activate the high-fidelity disclosure tooltip linked to `/sources`.
-
-**Law 3: Social media links are mandatory for all Craft Growers.**  
-To support the small-batch ecosystem, if a licensee is categorized as a "Craft Grower," its social media handle (Instagram/X) must be displayed and active.
+## Data Branding Laws
+- **Partner Suffix:** `(Partner)` is mandatory in `market-data.json` for 3rd-party brands.
+- **Visual Trigger:** `(Partner)` must render as a 'Vintage Quality Stamp' in the preview window.
+- **Validation:** Always run `python scripts/validate_data.py` before any UI refactor.
+- **Category Logic:** Map `license_type` to top-level directory categories.
 
 ## 3. The "Spotlight" Component Prompt
 Use this prompt when generating the Breeder Spotlight UI:
 "Create a high-fidelity documentation-style grid for the 'Master Breeders'. Each card should feature a high-contrast portrait (or icon), their 'Legendary Strains' as interactive genetic badges, and a specialization tag. Hovering a strain badge should reveal the breeder's 'Grower Notes' tooltip."
+
+## UI/UX Protocol: SEO Directory (Zero-Scroll)
+- **Layout:** 3-column grid, text-heavy, category-based.
+- **Palette:** Background `#0A0A0A`, Headers `Hot Pink` (#FF69B4), Links `Lime Green` (#32CD32), Sub-text `#666666`.
+- **Interaction:** No scrolling allowed for the main directory core. Use 'Glassmorphism' hover-previews for deep brand data.
+- **Typography:** 12px System-Mono (Courier/SF Mono) for directory links. 1px solid borders for category containment.
+
+## Data Branding Laws
+- **Partner Suffix:** `(Partner)` is mandatory in `market-data.json` for 3rd-party brands.
+- **Visual Trigger:** `(Partner)` must render as a 'Vintage Quality Stamp' in the preview window.
+- **Validation:** Always run `python scripts/validate_data.py` before any UI refactor.
+- **Category Logic:** Map `license_type` to top-level directory categories.
 
 ## Agent Constraints (Do Not Hallucinate)
 - **DO NOT** assume a brand belongs to a cultivator if it is not explicitly mapped in `data.json`.
@@ -54,7 +68,7 @@ Use this prompt when generating the Breeder Spotlight UI:
 - **DO NOT** create "master grower" names for facilities where they are listed as "Not Publicly Listed."
 
 ## Example Agent Task
-"Build a React grid where each card represents a Cultivator, listing their Location at the top and their Brands as clickable tags at the bottom. Color-code the cards based on license_type (Cultivation Center vs. Craft Grower)."
+"Build a 3-column SEO link directory. Each column represents a license_type. Each row is a cultivator link in Lime Green. Hovering reveal a Hot Pink background with a floating brands list."
 
 ## Verification Rule
 Before deploying any UI changes or updating the master list, run the validation script: `python scripts/validate_data.py data.json`. If it returns a non-zero exit code, do not proceed with the build and report the specific errors to the user.

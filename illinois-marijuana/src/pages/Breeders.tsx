@@ -1,11 +1,4 @@
 import { Link } from 'react-router-dom';
-import {
-    Leaf,
-    Sparkles,
-    Dna,
-    ShieldCheck,
-    ArrowLeft
-} from 'lucide-react';
 import marketData from '../data/market-data.json';
 
 interface Breeder {
@@ -18,111 +11,74 @@ interface Breeder {
 
 export default function Breeders() {
     return (
-        <div className="min-h-screen bg-luxe-midnight text-slate-200 font-sans selection:bg-weird-lime/30 pb-24">
+        <div className="min-h-screen flex flex-col max-w-[1200px] mx-auto px-4 py-6 font-mono">
             {/* Header */}
-            <header className="border-b-4 border-weird-lime/10 bg-black/40 backdrop-blur-3xl sticky top-0 z-50">
-                <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                    <Link to="/" className="flex items-center gap-2 text-weird-lime/50 hover:text-weird-lime transition-all group">
-                        <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                        <span className="text-sm font-black uppercase tracking-[0.2em]">Exit to Vault</span>
-                    </Link>
-                    <div className="flex items-center gap-2 text-trippy-pink font-serif font-black italic uppercase tracking-tighter">
-                        <Sparkles size={18} />
-                        Genetic Archives
+            <header className="border-b border-neo-gray mb-8 pb-4 flex justify-between items-end">
+                <div>
+                    <div className="text-[10px] text-neo-gray mb-1 uppercase tracking-tight">
+                        Index / Illinois / Marijuana Cultivators / Genetic Archives
                     </div>
+                    <h1 className="text-3xl font-black text-hot-pink leading-none uppercase">
+                        Genetic Archives
+                    </h1>
+                </div>
+                <div className="text-right">
+                    <Link to="/" className="text-lime-green text-xs hover:underline uppercase font-bold">
+                        &lt;&lt; BACK TO DIRECTORY
+                    </Link>
                 </div>
             </header>
 
-            <main className="max-w-7xl mx-auto px-6 py-20">
-                <div className="mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg bg-weird-lime text-black text-[10px] font-black uppercase tracking-[0.3em] mb-6 shadow-[4px_4px_0px_white]">
-                        <Sparkles size={14} />
-                        Lineage Protocol
-                    </div>
-                    <h1 className="text-6xl md:text-8xl font-serif font-black text-white mb-6 uppercase tracking-tighter leading-none">
-                        Master <span className="gold-gradient-text italic">Breeders</span>
-                    </h1>
-                    <p className="text-2xl text-slate-500 max-w-2xl font-light leading-relaxed italic border-l-4 border-trippy-pink/20 pl-8">
-                        The elite architects shaping the Illinois frequency through rigorous selection and heritage lineage preservation.
-                    </p>
-                </div>
+            <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+                {marketData.famous_growers_spotlight.map((breeder: Breeder, idx) => (
+                    <div key={idx} className="directory-box p-4 space-y-4">
+                        <div className="border-b border-neo-gray pb-2 mb-2">
+                            <h2 className="text-lime-green font-black text-lg uppercase">{breeder.name}</h2>
+                            <div className="text-[10px] text-neo-gray uppercase font-bold">Facility: {breeder.cultivator}</div>
+                        </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    {marketData.famous_growers_spotlight.map((breeder: Breeder, idx) => (
-                        <div key={idx} className="glass-card p-12 rounded-[2.5rem] group relative flex flex-col h-full border-weird-lime/10 hover:rotate-1">
-                            <div className="absolute top-12 right-12 text-weird-lime/5 group-hover:text-weird-lime/20 transition-colors">
-                                <Dna size={140} />
+                        <div className="space-y-3">
+                            <div>
+                                <span className="text-hot-pink font-bold text-[9px] uppercase mr-2">Specialization:</span>
+                                <span className="text-[11px] text-white">{breeder.specialization}</span>
                             </div>
 
-                            <div className="relative z-10 flex flex-col h-full">
-                                <div className="text-[10px] font-black text-weird-lime uppercase tracking-[0.3em] mb-4 px-4 py-1.5 rounded-lg bg-weird-lime/10 border-2 border-weird-lime/20 w-fit">
-                                    {breeder.specialization}
+                            <div>
+                                <span className="text-hot-pink font-bold text-[9px] uppercase mr-2">Strain Portfolio:</span>
+                                <div className="mt-1 flex flex-wrap gap-1">
+                                    {breeder.legendary_strains.map((strain, i) => (
+                                        <span key={i} className="text-[10px] text-lime-green border border-neo-gray px-1 bg-black">
+                                            {strain}
+                                        </span>
+                                    ))}
                                 </div>
+                            </div>
 
-                                <h3 className="text-4xl font-serif font-black text-white mb-1 group-hover:text-trippy-pink transition-colors uppercase tracking-tighter leading-none">
-                                    {breeder.name}
-                                </h3>
-                                <div className="text-xs font-black text-slate-500 uppercase tracking-[0.2em] mb-10 flex items-center gap-2 opacity-50">
-                                    <Leaf size={14} className="text-weird-lime" />
-                                    {breeder.cultivator}
-                                </div>
-
-                                <p className="text-slate-400 text-lg leading-relaxed mb-12 font-light italic border-l-2 border-white/10 pl-6">
-                                    "{breeder.profile}"
-                                </p>
-
-                                <div className="mt-auto space-y-8">
-                                    <div className="flex items-center gap-4">
-                                        <div className="h-0.5 flex-1 bg-white/5"></div>
-                                        <div className="text-[10px] font-black text-slate-600 uppercase tracking-[0.4em] whitespace-nowrap">Genetic Matrix</div>
-                                        <div className="h-0.5 flex-1 bg-white/5"></div>
-                                    </div>
-
-                                    <div className="flex flex-wrap gap-3">
-                                        {breeder.legendary_strains.map((strain, i) => (
-                                            <div key={i} className="group/strain relative">
-                                                <span className="px-5 py-2.5 rounded-2xl bg-black/40 border-2 border-white/5 text-xs font-black text-weird-lime/70 hover:bg-weird-lime/10 hover:border-weird-lime hover:text-white cursor-help transition-all flex items-center gap-2 shadow-xl">
-                                                    <div className="w-2 h-2 rounded-full bg-weird-lime shadow-[0_0_12px_rgba(183,255,0,0.8)]" />
-                                                    {strain}
-                                                </span>
-
-                                                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-6 w-80 p-6 bg-luxe-midnight border-2 border-trippy-pink rounded-[2.5rem] text-xs text-slate-200 shadow-[30px_30px_80px_rgba(0,0,0,1)] opacity-0 group-hover/strain:opacity-100 transition-all pointer-events-none z-50 translate-y-4 group-hover/strain:translate-y-0 backdrop-blur-3xl">
-                                                    <div className="font-black text-trippy-pink uppercase tracking-[0.4em] mb-3 text-[10px] flex items-center justify-between">
-                                                        <span>Breeder_Verified</span>
-                                                        <Sparkles size={14} />
-                                                    </div>
-                                                    <p className="leading-relaxed font-light italic mb-6 text-sm">
-                                                        "{breeder.profile.split('.')[0]}."
-                                                    </p>
-                                                    <div className="pt-4 border-t-2 border-white/5 flex items-center justify-between">
-                                                        <div className="flex items-center gap-2 text-weird-lime">
-                                                            <ShieldCheck size={16} />
-                                                            <span className="text-[10px] uppercase font-black tracking-widest">Protocol Lock</span>
-                                                        </div>
-                                                        <span className="text-[9px] text-slate-700 font-black uppercase tracking-tighter">ID: MJ_2026_GEN</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
+                            <div className="pt-2 border-t border-neo-gray/30 text-[10px] text-neo-gray italic leading-relaxed">
+                                {breeder.profile}
                             </div>
                         </div>
-                    ))}
+                    </div>
+                ))}
+
+                {/* Info Box */}
+                <div className="directory-box p-6 bg-black/50 border-dashed border-neo-gray">
+                    <h3 className="text-hot-pink font-bold text-xs uppercase mb-2">ARCHIVE INFORMATION</h3>
+                    <p className="text-[10px] text-neo-gray leading-relaxed mb-4">
+                        Genetic data is sourced from Illinois Department of Agriculture licensee records and public genetic whitepapers.
+                    </p>
+                    <Link to="/sources" className="text-lime-green text-[10px] font-bold hover:underline">VIEW VERIFICATION LOGS</Link>
                 </div>
             </main>
 
-            {/* Legal Footer */}
-            <footer className="max-w-7xl mx-auto px-6 pt-32 border-t-8 border-weird-lime/10">
-                <div className="flex flex-col md:flex-row justify-between items-start gap-12 text-slate-700 text-[11px] font-black leading-relaxed uppercase tracking-[0.2em]">
-                    <div className="max-w-md">
-                        All genetic claims and 'Legendary' statuses are attributed based on market reputation and
-                        available breeder self-identification. This index is for metaphysical transparency.
+            {/* Footer Stats */}
+            <footer className="mt-auto pt-16">
+                <div className="directory-box bg-black p-4 stats-bar flex flex-col md:flex-row justify-between items-center text-[10px]">
+                    <div>
+                        ARCHIVE_STATUS: {marketData.famous_growers_spotlight.length} BREEDERS INDEXED
                     </div>
-                    <div className="flex gap-12">
-                        <Link to="/sources" className="hover:text-weird-lime transition-colors">Origins</Link>
-                        <Link to="/" className="hover:text-trippy-pink transition-colors">Vault</Link>
-                        <span className="opacity-30">Alpha_v2.6</span>
+                    <div>
+                        DATA_VERSION: 2.0_BETA // REVISED FEB 2026
                     </div>
                 </div>
             </footer>
