@@ -1,0 +1,5 @@
+{
+    "buildCommand": "python .agent/skills/illinois-cannabis-data-management/scripts/validate_data.py illinois-marijuana/src/data/market-data.json && cd illinois-marijuana && npm run build",
+    "installCommand": "pip install -r requirements.txt && cd illinois-marijuana && npm install",
+    "outputDirectory": "illinois-marijuana/dist"
+}
