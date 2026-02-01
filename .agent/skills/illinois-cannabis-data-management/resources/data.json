@@ -1,0 +1,435 @@
+{
+    "market_region": "Illinois",
+    "data_as_of": "February 2026",
+    "cultivators": [
+        {
+            "name": "Ascend Illinois",
+            "license_type": "Cultivation Center",
+            "facility_location": "Barry",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@ascend.wellness"
+            },
+            "brands": [
+                "Ozone",
+                "Simply Herb",
+                "1906 (Partner)",
+                "Lowell Herb Co. (Partner)"
+            ]
+        },
+        {
+            "name": "Ataraxia (Verano Holdings)",
+            "license_type": "Cultivation Center",
+            "facility_location": "Albion",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@veranobrands"
+            },
+            "brands": [
+                "Verano",
+                "(the) Essence",
+                "Savvy",
+                "Savvy Strut",
+                "BITS",
+                "Encore",
+                "Avexia",
+                "MÜV"
+            ]
+        },
+        {
+            "name": "Bedford Grow",
+            "license_type": "Cultivation Center",
+            "facility_location": "Bedford Park",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@bedfordgrow"
+            },
+            "brands": [
+                "Bedford Grow",
+                "BG"
+            ]
+        },
+        {
+            "name": "Cresco Labs",
+            "license_type": "Cultivation Center",
+            "facility_location": [
+                "Joliet",
+                "Lincoln",
+                "Kankakee"
+            ],
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@crescocannabis"
+            },
+            "brands": [
+                "Cresco",
+                "High Supply",
+                "FloraCal Farms",
+                "Mindy’s Edibles",
+                "Good News",
+                "Wonder Wellness Co.",
+                "Remedi"
+            ]
+        },
+        {
+            "name": "Curative Health (Columbia Care/Cannabist)",
+            "license_type": "Cultivation Center",
+            "facility_location": "Aurora",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@eat_drink_high"
+            },
+            "brands": [
+                "Seed & Strain",
+                "Triple Seven (777)",
+                "Classix",
+                "Amber",
+                "Press"
+            ]
+        },
+        {
+            "name": "Green Thumb Industries (GTI)",
+            "license_type": "Cultivation Center",
+            "facility_location": [
+                "Oglesby",
+                "Rock Island"
+            ],
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@rythm_official"
+            },
+            "brands": [
+                "Rythm",
+                "Good Green",
+                "&Shine",
+                "Dogwalkers",
+                "Incredibles",
+                "Beboe",
+                "Doctor Solomon’s"
+            ]
+        },
+        {
+            "name": "Ieso",
+            "license_type": "Cultivation Center",
+            "facility_location": "Murphysboro",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@iesocannabis"
+            },
+            "brands": [
+                "Cultivate",
+                "NuEra",
+                "Alchemy"
+            ]
+        },
+        {
+            "name": "In Grown Farms",
+            "license_type": "Cultivation Center",
+            "facility_location": "Freeport",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@thebotanist_il"
+            },
+            "brands": [
+                "The Botanist",
+                "Superflux",
+                "Innocent"
+            ]
+        },
+        {
+            "name": "Nature’s Grace & Wellness",
+            "license_type": "Cultivation Center",
+            "facility_location": "Vermont",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@naturesgrace_il"
+            },
+            "brands": [
+                "Nature’s Grace",
+                "Twenty-Twenty",
+                "The Funnies",
+                "Moon Boots",
+                "Community"
+            ]
+        },
+        {
+            "name": "NuEra (NPI Hillcrest)",
+            "license_type": "Cultivation Center",
+            "facility_location": "Rochelle",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@nueracannabis"
+            },
+            "brands": [
+                "NuEra",
+                "Midweek Friday",
+                "Alchemy"
+            ]
+        },
+        {
+            "name": "PharmaCann",
+            "license_type": "Cultivation Center",
+            "facility_location": "Dwight",
+            "head_grower": "James Walker (Lead)",
+            "social_media": {
+                "instagram": "@matter_il"
+            },
+            "brands": [
+                "Matter",
+                "P3",
+                "LivWell",
+                "Magnify"
+            ]
+        },
+        {
+            "name": "Progressive Treatment Solutions (PTS)",
+            "license_type": "Cultivation Center",
+            "facility_location": "East St. Louis",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@pts_il"
+            },
+            "brands": [
+                "PTS",
+                "Pure AF",
+                "Cronuts",
+                "Tonic"
+            ]
+        },
+        {
+            "name": "Revolution Cannabis",
+            "license_type": "Cultivation Center",
+            "facility_location": "Delavan",
+            "head_grower": "Dustin Shroyer",
+            "social_media": {
+                "instagram": "@revcanna"
+            },
+            "brands": [
+                "Revolution",
+                "Tales & Travels",
+                "Spring Lake",
+                "Spectra",
+                "Cookies (Partner)"
+            ]
+        },
+        {
+            "name": "Shelby County Community Services (SCCS)",
+            "license_type": "Cultivation Center",
+            "facility_location": "Shelbyville",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@sccs_il"
+            },
+            "brands": [
+                "SCCS"
+            ]
+        },
+        {
+            "name": "Wellness Group Pharms (Aeriz)",
+            "license_type": "Cultivation Center",
+            "facility_location": "Anna",
+            "head_grower": "Zack Bigg",
+            "social_media": {
+                "instagram": "@aerizusa"
+            },
+            "brands": [
+                "Aeriz",
+                "Daze Off",
+                "Fig Farms (Partner)",
+                "UpNorth (Partner)",
+                "93 Boyz (Partner)"
+            ]
+        },
+        {
+            "name": "IC Collective",
+            "license_type": "Craft Grower",
+            "facility_location": "Cary",
+            "head_grower": "Ben (The Scientist)",
+            "social_media": {
+                "instagram": "@iccollective"
+            },
+            "brands": [
+                "IC Collective"
+            ]
+        },
+        {
+            "name": "Nez",
+            "license_type": "Craft Grower",
+            "facility_location": "Cary",
+            "head_grower": "Nez",
+            "social_media": {
+                "instagram": "https://www.instagram.com/nez.craft/",
+                "website": "https://www.nezcannabis.com/"
+            },
+            "brands": [
+                "Nez",
+                "Cookies (Partner)"
+            ]
+        },
+        {
+            "name": "Galaxy Labs",
+            "license_type": "Craft Grower",
+            "facility_location": "Richton Park",
+            "head_grower": "Rick Ringold",
+            "social_media": {
+                "instagram": "@galaxylabs.il"
+            },
+            "brands": [
+                "Galaxy Labs",
+                "Moon Dust"
+            ]
+        },
+        {
+            "name": "Cannect Wellness",
+            "license_type": "Craft Grower",
+            "facility_location": "Franklin Park",
+            "head_grower": "Jake Heller",
+            "social_media": {
+                "instagram": "@cannectwellness"
+            },
+            "brands": [
+                "Cannect"
+            ]
+        },
+        {
+            "name": "11th Level (Ümi Farms)",
+            "license_type": "Craft Grower",
+            "facility_location": "Rolling Meadows",
+            "head_grower": "Akele Parnell",
+            "social_media": {
+                "instagram": "https://www.instagram.com/11thlevel.il/",
+                "linkedin": "https://www.linkedin.com/in/akele-parnell/"
+            },
+            "brands": [
+                "11th Level",
+                "Lab 11"
+            ]
+        },
+        {
+            "name": "Northern Heights",
+            "license_type": "Craft Grower",
+            "facility_location": "Cary",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@northernheightsil"
+            },
+            "brands": [
+                "Northern Heights"
+            ]
+        },
+        {
+            "name": "Oregonix Farms",
+            "license_type": "Craft Grower",
+            "facility_location": "Huntley",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@oregonixfarms"
+            },
+            "brands": [
+                "Oregonix"
+            ]
+        },
+        {
+            "name": "Flora Arbor",
+            "license_type": "Craft Grower",
+            "facility_location": "Plainfield",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@floraarbor"
+            },
+            "brands": [
+                "Flora Arbor"
+            ]
+        },
+        {
+            "name": "Drecisco Farms",
+            "license_type": "Craft Grower",
+            "facility_location": "Marengo",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "@dreciscofarms"
+            },
+            "brands": [
+                "Drecisco Farms"
+            ]
+        },
+        {
+            "name": "Legacy Cannabis",
+            "license_type": "Craft Grower",
+            "facility_location": "Litchfield",
+            "head_grower": "Not Publicly Listed",
+            "social_media": {
+                "instagram": "https://www.instagram.com/cementyourlegacy/",
+                "website": "https://www.legacyil.com/"
+            },
+            "brands": [
+                "Legacy",
+                "EVOL"
+            ]
+        }
+    ],
+    "famous_growers_spotlight": [
+        {
+            "name": "Dustin Shroyer",
+            "cultivator": "Revolution Cannabis",
+            "specialization": "Genetic Selection & COO",
+            "profile": "Spearheaded the 'Cookies x Revolution' partnership; winner of 20+ High Times Cannabis Cups in Illinois.",
+            "legendary_strains": [
+                "Florida Orange",
+                "Gorilla'd Cheese",
+                "Mexican Flan",
+                "Pacman"
+            ]
+        },
+        {
+            "name": "Ben (The Scientist)",
+            "cultivator": "IC Collective",
+            "specialization": "Chem & Sour Genetics",
+            "profile": "Keeper of the authentic Chem Dog lineage, bringing decades of legacy breeding experience from California to the Illinois craft market. Known for heritage Chemdog lines.",
+            "legendary_strains": [
+                "Chem D",
+                "T.I.T.S.",
+                "Sweet Sting",
+                "OMFG",
+                "Fog Dog",
+                "Alley Cat"
+            ]
+        },
+        {
+            "name": "Nez",
+            "cultivator": "Nez",
+            "specialization": "Exotic Cultivars & Bag Appeal",
+            "profile": "Lead grower at Nez, focusing on high-terpene boutique selections and modern California-inspired genetic profiles.",
+            "legendary_strains": [
+                "Point Break",
+                "Baby Yoda",
+                "Mac Stomper",
+                "Cadillac Rainbows",
+                "BOLO Runtz",
+                "Daily Grapes"
+            ]
+        },
+        {
+            "name": "Jake Heller",
+            "cultivator": "Cannect Wellness",
+            "specialization": "Modern Exotic Terpene Profiles",
+            "profile": "Specializing in the latest high-demand genetics, focusing on unique terpene combinations and high potency.",
+            "legendary_strains": [
+                "Sherbanger",
+                "Super Boof",
+                "Z-Frosted",
+                "Wedding Cake"
+            ]
+        },
+        {
+            "name": "Akele Parnell",
+            "cultivator": "11th Level",
+            "specialization": "Social Equity & Advocacy",
+            "profile": "Attorney and activist turned craft cultivator, focusing on premium 'Lab 11' heirloom genetics.",
+            "legendary_strains": [
+                "Blackberry Kush",
+                "Sherbinski Genetics"
+            ]
+        }
+    ]
+}
