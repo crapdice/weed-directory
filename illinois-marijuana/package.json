@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "python scripts/validate_data.py src/data/market-data.json && tsc -b && vite build",
+    "build": "python3 scripts/validate_data.py src/data/market-data.json && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
