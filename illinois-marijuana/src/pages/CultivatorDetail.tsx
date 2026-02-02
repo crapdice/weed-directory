@@ -37,19 +37,19 @@ export default function CultivatorDetail() {
     }
 
     return (
-        <div className="min-h-screen flex flex-col max-w-[1000px] mx-auto px-4 py-6 font-mono selection:bg-hot-pink selection:text-black">
+        <div className="min-h-screen flex flex-col max-w-[1000px] mx-auto px-4 py-6 font-mono selection:bg-pink-vibrant selection:text-black">
             {/* Header */}
-            <header className="border-b border-neo-gray mb-12 pb-4 flex justify-between items-end">
+            <header className="border-b border-border-muted mb-12 pb-4 flex justify-between items-end">
                 <div>
-                    <div className="text-[10px] text-neo-gray mb-1 uppercase tracking-tight">
-                        Index / Illinois / Cultivators / {cultivator.name}
+                    <div className="text-[9px] text-lime-muted/40 mb-1 uppercase tracking-[0.2em] font-bold">
+                        Dossier / Illinois / Cultivator / {cultivator.name}
                     </div>
-                    <h1 className="text-3xl font-black text-lime-green leading-none uppercase">
+                    <h1 className="text-4xl font-black text-lime-vibrant leading-none uppercase neon-text-lime tracking-tighter">
                         {cultivator.name}
                     </h1>
                 </div>
                 <div className="text-right">
-                    <Link to="/" className="text-hot-pink text-xs hover:underline uppercase font-bold">
+                    <Link to="/" className="text-pink-vibrant text-xs hover:underline uppercase font-bold">
                         &lt;&lt; BACK TO INDEX
                     </Link>
                 </div>
@@ -68,24 +68,24 @@ export default function CultivatorDetail() {
 
                             <div className="grid grid-cols-2 gap-6">
                                 <div>
-                                    <span className="text-hot-pink font-bold text-[10px] uppercase block mb-1">License Type:</span>
-                                    <span className="text-white text-sm">{cultivator.license_type}</span>
+                                    <span className="text-pink-muted/60 font-extrabold text-[8px] uppercase block mb-1 tracking-widest">License Type:</span>
+                                    <span className="text-lime-muted/80 text-sm font-medium">{cultivator.license_type}</span>
                                 </div>
                                 <div>
-                                    <span className="text-hot-pink font-bold text-[10px] uppercase block mb-1">Status:</span>
-                                    <span className="text-lime-green text-sm font-bold uppercase">{cultivator.status || "Operational"}</span>
+                                    <span className="text-pink-muted/60 font-extrabold text-[8px] uppercase block mb-1 tracking-widest">Operational Status:</span>
+                                    <span className="text-lime-vibrant/80 text-sm font-black uppercase neon-text-lime">{cultivator.status || "Operational"}</span>
                                 </div>
                             </div>
 
                             <div>
-                                <span className="text-hot-pink font-bold text-[10px] uppercase block mb-1">Physical Location(s):</span>
+                                <span className="text-pink-muted/60 font-extrabold text-[8px] uppercase block mb-1 tracking-widest">Physical Location(s):</span>
                                 <div className="space-y-2">
                                     {Array.isArray(cultivator.facility_location) ? (
                                         cultivator.facility_location.map((loc, i) => (
-                                            <div key={i} className="text-white text-sm bg-black border border-neo-gray/30 p-2">{loc}</div>
+                                            <div key={i} className="text-lime-muted/80 text-xs bg-[#111111] border border-[#1A1A1A] p-2 font-medium">{loc}</div>
                                         ))
                                     ) : (
-                                        <div className="text-white text-sm bg-black border border-neo-gray/30 p-2">{cultivator.facility_location}</div>
+                                        <div className="text-lime-muted/80 text-xs bg-[#111111] border border-[#1A1A1A] p-2 font-medium">{cultivator.facility_location}</div>
                                     )}
                                 </div>
                             </div>
@@ -107,9 +107,9 @@ export default function CultivatorDetail() {
                                     const isPartner = brand.includes('(Partner)');
                                     const cleanBrand = brand.replace(' (Partner)', '');
                                     return (
-                                        <div key={i} className={`p-3 border border-neo-gray/30 text-center flex flex-col justify-center ${isPartner ? 'bg-hot-pink/5 border-hot-pink/30' : 'bg-black'}`}>
-                                            <span className={`text-[11px] font-bold ${isPartner ? 'text-hot-pink italic cursor-help' : 'text-white'}`} title={isPartner ? `Regulatory Disclosure: Produced by ${cultivator.name}` : undefined}>{cleanBrand}</span>
-                                            {isPartner && <span className="text-[8px] text-neo-gray mt-1 uppercase">Third-Party Partner</span>}
+                                        <div key={i} className={`p-3 border transition-colors ${isPartner ? 'bg-pink-vibrant/5 border-pink-vibrant/20' : 'bg-[#111111] border-[#1A1A1A]'}`}>
+                                            <span className={`text-[10px] ${isPartner ? 'text-pink-vibrant font-black italic cursor-help' : 'text-lime-muted/85 font-bold'}`} title={isPartner ? `Regulatory Disclosure: Produced by ${cultivator.name}` : undefined}>{cleanBrand}</span>
+                                            {isPartner && <span className="text-[7px] text-pink-muted/50 mt-1 uppercase block font-black tracking-tighter text-center">Third-Party Partner</span>}
                                         </div>
                                     );
                                 })}
@@ -154,8 +154,8 @@ export default function CultivatorDetail() {
             </main>
 
             {/* Internal Footer */}
-            <footer className="mt-16 pt-8 border-t border-neo-gray text-center">
-                <div className="text-[10px] text-neo-gray uppercase tracking-widest">
+            <footer className="mt-16 pt-8 border-t border-border-muted text-center">
+                <div className="text-[10px] text-border-muted uppercase tracking-widest">
                     IL_CANNABIS_DIRECTORY // FILE_{id?.toUpperCase()}
                 </div>
             </footer>

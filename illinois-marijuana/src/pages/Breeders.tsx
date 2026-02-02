@@ -11,50 +11,50 @@ interface Breeder {
 
 export default function Breeders() {
     return (
-        <div className="min-h-screen flex flex-col max-w-[1200px] mx-auto px-4 py-6 font-mono">
-            {/* Header */}
-            <header className="border-b border-neo-gray mb-8 pb-4 flex justify-between items-end">
+        <div className="min-h-screen flex flex-col max-w-[1200px] mx-auto px-4 py-2 font-mono selection:bg-pink-vibrant selection:text-black">
+            {/* Header Row */}
+            <header className="flex flex-row justify-between items-center border-b border-border-muted pb-2 mb-2">
                 <div>
-                    <div className="text-[10px] text-neo-gray mb-1 uppercase tracking-tight">
+                    <div className="text-[10px] text-lime-muted/60 mb-1 uppercase tracking-tighter">
                         Index / Illinois / Marijuana Cultivators / Genetic Archives
                     </div>
-                    <h1 className="text-3xl font-black text-hot-pink leading-none uppercase">
-                        Genetic Archives
+                    <h1 className="text-2xl font-black text-pink-vibrant leading-none uppercase">
+                        Breeder Profiles
                     </h1>
                 </div>
-                <div className="text-right">
-                    <Link to="/" className="text-lime-green text-xs hover:underline uppercase font-bold">
+                <div className="flex items-center gap-6">
+                    <Link to="/" className="text-pink-vibrant text-[10px] hover:underline uppercase font-bold tracking-tighter">
                         &lt;&lt; BACK TO DIRECTORY
                     </Link>
                 </div>
             </header>
 
-            <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+            <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start mt-4">
                 {marketData.famous_growers_spotlight.map((breeder: Breeder, idx) => (
                     <div key={idx} className="directory-box p-4 space-y-4">
-                        <div className="border-b border-neo-gray pb-2 mb-2">
-                            <h2 className="text-lime-green font-black text-lg uppercase">{breeder.name}</h2>
-                            <div className="text-[10px] text-neo-gray uppercase font-bold">Facility: {breeder.cultivator}</div>
+                        <div className="border-b border-border-muted pb-2 mb-2">
+                            <h2 className="text-lime-vibrant font-black text-lg uppercase tracking-tight neon-text-lime">{breeder.name}</h2>
+                            <div className="text-[10px] text-lime-muted uppercase font-bold">Facility: {breeder.cultivator}</div>
                         </div>
 
                         <div className="space-y-3">
                             <div>
-                                <span className="text-hot-pink font-bold text-[9px] uppercase mr-2">Specialization:</span>
-                                <span className="text-[11px] text-white">{breeder.specialization}</span>
+                                <span className="text-pink-vibrant font-bold text-[9px] uppercase mr-2 tracking-widest">Specialization:</span>
+                                <span className="text-[11px] text-white/90">{breeder.specialization}</span>
                             </div>
 
                             <div>
-                                <span className="text-hot-pink font-bold text-[9px] uppercase mr-2">Strain Portfolio:</span>
+                                <span className="text-pink-vibrant font-bold text-[9px] uppercase mr-2 tracking-widest">Strain Portfolio:</span>
                                 <div className="mt-1 flex flex-wrap gap-1">
                                     {breeder.legendary_strains.map((strain, i) => (
-                                        <span key={i} className="text-[10px] text-lime-green border border-neo-gray px-1 bg-black">
+                                        <span key={i} className="text-[10px] text-lime-vibrant border border-border-muted px-1 bg-black/50 font-bold">
                                             {strain}
                                         </span>
                                     ))}
                                 </div>
                             </div>
 
-                            <div className="pt-2 border-t border-neo-gray/30 text-[10px] text-neo-gray italic leading-relaxed">
+                            <div className="pt-2 border-t border-border-muted/30 text-[10px] text-lime-muted/70 italic leading-relaxed font-medium">
                                 {breeder.profile}
                             </div>
                         </div>
@@ -62,12 +62,12 @@ export default function Breeders() {
                 ))}
 
                 {/* Info Box */}
-                <div className="directory-box p-6 bg-black/50 border-dashed border-neo-gray">
-                    <h3 className="text-hot-pink font-bold text-xs uppercase mb-2">ARCHIVE INFORMATION</h3>
-                    <p className="text-[10px] text-neo-gray leading-relaxed mb-4">
+                <div className="directory-box p-6 bg-black/50 border-dashed border-border-muted">
+                    <h3 className="text-pink-vibrant font-bold text-xs uppercase mb-2">ARCHIVE INFORMATION</h3>
+                    <p className="text-[10px] text-lime-muted/60 leading-relaxed mb-4">
                         Genetic data is sourced from Illinois Department of Agriculture licensee records and public genetic whitepapers.
                     </p>
-                    <Link to="/sources" className="text-lime-green text-[10px] font-bold hover:underline">VIEW VERIFICATION LOGS</Link>
+                    <Link to="/sources" className="text-lime-vibrant text-[10px] font-bold hover:underline">VIEW VERIFICATION LOGS</Link>
                 </div>
             </main>
 

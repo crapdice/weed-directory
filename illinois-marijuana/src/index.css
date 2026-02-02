@@ -1,18 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-retro-bg: #0a110a;
-  /* Slightly greener dark for 90s feel */
-  --color-hot-pink: #ff00ff;
-  /* Pure magenta */
-  --color-lime-green: #00ff00;
-  /* Pure green */
-  --color-neo-gray: #555555;
+  --color-bg-deep: #0D0D0D;
+  --color-bg-surface: #1A1A1A;
+  --color-lime-vibrant: #32CD32;
+  --color-lime-muted: #85B885;
+  --color-lime-glow: rgba(50, 205, 50, 0.15);
+  --color-pink-vibrant: #FF69B4;
+  --color-pink-muted: #C58DA7;
+  --color-border-muted: #262626;
   --font-mono: "MS Sans Serif", "Arial", sans-serif;
 }
 
 :root {
-  background-color: #000000;
+  background-color: var(--color-bg-deep);
   color: #dddddd;
   font-family: var(--font-mono);
 }
@@ -20,27 +21,33 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000000;
+  background-color: var(--color-bg-deep);
 }
 
 .directory-box {
-  border: 1px solid #333333;
-  background: #050505;
+  border: 1px solid var(--color-border-muted);
+  background: #111111;
+  box-shadow: inset 0 0 15px var(--color-lime-glow);
+  /* Subtle inner Lime glow */
 }
 
 .directory-header {
-  border-bottom: 1px solid #333333;
-  background: #1a1a1a;
-  color: var(--color-hot-pink);
+  border-bottom: 1px solid var(--color-border-muted);
+  background: var(--color-bg-surface);
+  color: var(--color-pink-vibrant);
   font-size: 0.7rem;
   font-weight: bold;
   text-transform: uppercase;
   padding: 4px 8px;
 }
 
+.neon-text-lime {
+  text-shadow: 0 0 1px var(--color-lime-vibrant);
+}
+
 .stats-bar {
-  border-top: 2px solid #333333;
-  color: var(--color-neo-gray);
+  border-top: 2px solid var(--color-border-muted);
+  color: var(--color-border-muted);
   letter-spacing: 1px;
 }
 
@@ -73,5 +80,5 @@ button {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-lime-green);
+  background: var(--color-lime-vibrant);
 }

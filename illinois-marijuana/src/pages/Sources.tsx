@@ -51,34 +51,34 @@ export default function Sources() {
     const lastUpdated = "2026-02-01 10:45:00";
 
     return (
-        <div className="min-h-screen flex flex-col max-w-[1000px] mx-auto px-4 py-6 font-mono selection:bg-hot-pink selection:text-black">
+        <div className="min-h-screen flex flex-col max-w-[1000px] mx-auto px-4 py-6 font-mono selection:bg-pink-vibrant selection:text-black">
             {/* Header */}
-            <header className="border-b border-neo-gray mb-12 pb-4 flex justify-between items-end">
+            <header className="border-b border-border-muted mb-12 pb-4 flex justify-between items-end">
                 <div>
-                    <div className="text-[10px] text-neo-gray mb-1 uppercase tracking-tight">
-                        Index / Illinois / Documentation / Sources
+                    <div className="text-[9px] text-lime-muted/40 mb-1 uppercase tracking-[0.2em] font-bold">
+                        Archive / Illinois / Documentation / Sources
                     </div>
-                    <h1 className="text-3xl font-black text-lime-green leading-none uppercase">
+                    <h1 className="text-4xl font-black text-lime-vibrant leading-none uppercase neon-text-lime tracking-tighter">
                         Data Attributions
                     </h1>
                 </div>
                 <div className="text-right">
-                    <Link to="/" className="text-hot-pink text-sm flex items-center gap-2 hover:underline uppercase font-bold">
+                    <Link to="/" className="text-pink-vibrant text-sm flex items-center gap-2 hover:underline uppercase font-bold">
                         <ArrowLeft size={14} /> Back to Directory
                     </Link>
                 </div>
             </header>
 
             <main className="space-y-12">
-                <section className="directory-box p-4 bg-black/40 border-dashed border-neo-gray">
-                    <div className="flex items-center gap-2 text-hot-pink mb-2">
-                        <span className="text-xs font-bold uppercase">[STATUS_REPORT]</span>
+                <section className="directory-box p-4 bg-black/40 border-dashed border-border-muted">
+                    <div className="flex items-center gap-2 text-pink-muted mb-2">
+                        <span className="text-[9px] font-black uppercase tracking-widest">[STATUS_REPORT]</span>
                     </div>
-                    <p className="text-[11px] text-neo-gray leading-relaxed">
+                    <p className="text-[11px] text-lime-muted/60 leading-relaxed font-medium">
                         The Illinois Cannabis Directory is a consolidated synthesis of official state records and real-time market tracking.
                         Data integrity is verified against the TASL standard.
                     </p>
-                    <div className="mt-4 text-[10px] text-lime-green font-bold">
+                    <div className="mt-4 text-[9px] text-lime-vibrant/80 font-black tracking-widest neon-text-lime">
                         SYSTEM_LAST_SYNC: {lastUpdated}
                     </div>
                 </section>
@@ -101,16 +101,16 @@ export default function Sources() {
 
                                                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-2">
                                                     <div>
-                                                        <span className="text-[9px] text-hot-pink uppercase font-bold block">Author:</span>
-                                                        <span className="text-[10px] text-white/80">{item.author}</span>
+                                                        <span className="text-[8px] text-pink-muted/60 uppercase font-black tracking-widest block mb-0.5">Author:</span>
+                                                        <span className="text-[10px] text-lime-muted/80 font-bold">{item.author}</span>
                                                     </div>
                                                     <div>
-                                                        <span className="text-[9px] text-hot-pink uppercase font-bold block">License:</span>
-                                                        <span className="text-[10px] text-white/80">{item.license}</span>
+                                                        <span className="text-[8px] text-pink-muted/60 uppercase font-black tracking-widest block mb-0.5">License:</span>
+                                                        <span className="text-[10px] text-lime-muted/80 font-bold">{item.license}</span>
                                                     </div>
                                                     <div>
-                                                        <span className="text-[9px] text-hot-pink uppercase font-bold block">Verification:</span>
-                                                        <span className="text-[9px] text-lime-green font-bold">√ VERIFIED</span>
+                                                        <span className="text-[8px] text-pink-muted/60 uppercase font-black tracking-widest block mb-0.5">Verification:</span>
+                                                        <span className="text-[9px] text-lime-vibrant font-black neon-text-lime">√ VERIFIED</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -134,15 +134,15 @@ export default function Sources() {
                 </div>
             </main>
 
-            <footer className="mt-20 pt-8 border-t border-neo-gray">
+            <footer className="mt-20 pt-8 border-t border-border-muted">
                 <div className="directory-box p-4 bg-black/60">
-                    <h4 className="text-[10px] font-bold text-hot-pink uppercase mb-2">Legal Disclaimer</h4>
-                    <p className="text-[9px] text-neo-gray leading-relaxed">
+                    <h4 className="text-[10px] font-bold text-pink-vibrant uppercase mb-2">Legal Disclaimer</h4>
+                    <p className="text-[9px] text-border-muted leading-relaxed">
                         Information provided is for aggregate market research purposes only. While we verify data weekly, licensing status is subject to rapid change.
                         Always refer to the Illinois Department of Agriculture for legal standing.
                     </p>
                 </div>
-                <div className="mt-4 text-[9px] text-neo-gray text-center font-bold tracking-widest uppercase">
+                <div className="mt-4 text-[9px] text-border-muted text-center font-bold tracking-widest uppercase">
                     TASL_VERIFIED_DATASET // 2026.02.01
                 </div>
             </footer>

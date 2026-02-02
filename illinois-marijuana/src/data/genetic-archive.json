@@ -1,0 +1,100 @@
+{
+    "strains": [
+        {
+            "name": "Florida Orange",
+            "lineage": "Clementine x Key Lime Surprise",
+            "primary_cultivator": "Revolution",
+            "terpene_profile": "Purple (Caryophyllene Dominant)",
+            "breeder": "Revolution Cannabis",
+            "status": "Verified"
+        },
+        {
+            "name": "Brownie Scout",
+            "lineage": "Kosher Kush x Platinum GSC",
+            "primary_cultivator": "GTI / Rythm",
+            "terpene_profile": "Red (Balanced Caryophyllene/Limonene/Myrcene)",
+            "breeder": "GTI Exclusive",
+            "status": "Verified"
+        },
+        {
+            "name": "Jenny Kush",
+            "lineage": "Amnesia Haze x Rare Dankness #2",
+            "primary_cultivator": "Aeriz",
+            "terpene_profile": "Blue (Myrcene Dominant)",
+            "breeder": "Rare Dankness",
+            "status": "Verified"
+        },
+        {
+            "name": "Bio-Jesus",
+            "lineage": "Bio-Diesel x Gumbo",
+            "primary_cultivator": "Cresco",
+            "terpene_profile": "Blue (Myrcene Dominant)",
+            "breeder": "Denver Relief Farms",
+            "status": "Verified"
+        },
+        {
+            "name": "Gorilla’d Cheese",
+            "lineage": "GG#4 x Clementine",
+            "primary_cultivator": "Revolution",
+            "terpene_profile": "Orange (Terpinolene Dominant)",
+            "breeder": "Revolution Cannabis",
+            "status": "Verified"
+        },
+        {
+            "name": "Animal Face",
+            "lineage": "Face Off OG x Animal Mints",
+            "primary_cultivator": "GTI / Rythm",
+            "terpene_profile": "Purple (Caryophyllene Dominant)",
+            "breeder": "Seed Junky Genetics",
+            "status": "Verified"
+        },
+        {
+            "name": "Pink Kush",
+            "lineage": "OG Kush Hybrid (Specific cut)",
+            "primary_cultivator": "Aeriz",
+            "terpene_profile": "Blue (Myrcene Dominant)",
+            "breeder": "Barney's Farm (Heritage)",
+            "status": "Verified"
+        },
+        {
+            "name": "Slurricrasher",
+            "lineage": "Slurricane x Wedding Crasher",
+            "primary_cultivator": "Cresco",
+            "terpene_profile": "Purple (Caryophyllene Dominant)",
+            "breeder": "Seed Junky Genetics",
+            "status": "Verified"
+        },
+        {
+            "name": "G-Wagon",
+            "lineage": "Undisclosed",
+            "primary_cultivator": "Verano",
+            "terpene_profile": "Orange (Terpinolene Dominant)",
+            "breeder": "Proprietary",
+            "status": "Proprietary"
+        },
+        {
+            "name": "Mag Landrace",
+            "lineage": "Iranian Landrace heritage",
+            "primary_cultivator": "Verano",
+            "terpene_profile": "Blue (Myrcene Dominant)",
+            "breeder": "Heritage / Collected",
+            "status": "Verified"
+        },
+        {
+            "name": "London Pound Mints",
+            "lineage": "London Pound Cake #75 x Kush Mints #11",
+            "primary_cultivator": "Cresco (High Supply)",
+            "terpene_profile": "Purple (Caryophyllene Dominant)",
+            "breeder": "Seed Junky Genetics",
+            "status": "Verified"
+        },
+        {
+            "name": "Potus Berries",
+            "lineage": "Undisclosed",
+            "primary_cultivator": "Aeriz",
+            "terpene_profile": "Red (Balanced Profile)",
+            "breeder": "Proprietary",
+            "status": "Unverified"
+        }
+    ]
+}
