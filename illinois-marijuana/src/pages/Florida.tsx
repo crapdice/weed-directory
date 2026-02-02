@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import marketData from './data/market-data.json';
+import floridaData from '../data/florida-market-data.json';
 
 interface SocialMedia {
   instagram?: string;
@@ -10,37 +10,37 @@ interface SocialMedia {
 
 interface Cultivator {
   name: string;
-  license_type: string;
-  facility_location: string | string[];
-  head_grower: string;
+  license: string;
+  facility: string; // Changed from facility_location to facility to match FL data
+  websites?: string; // FL data uses singular website in JSON but let's check
+  social?: string; // FL data uses string for social
   brands: string[];
-  social_media: SocialMedia;
 }
 
 const SIDEBAR_IMAGES = [
   {
-    url: '/sidebar-cola.png',
-    label: 'ARCHIVE // ID-420-COLA',
-    desc: 'HIGH-RESOLUTION GENETIC CHARACTERIZATION.'
+    url: '/florida-orange.png',
+    label: 'ARCHIVE // FL-305-CITRUS',
+    desc: 'REGIONAL TERPENE PROFILE: CITRUS DOMINANT.'
   },
   {
-    url: '/sidebar-trichomes.png',
-    label: 'ARCHIVE // ID-710-TRICHOME',
-    desc: 'MICROSCOPIC CRYSTALLINE ANALYSIS. PURITY: MAX.'
+    url: '/florida-neon.png',
+    label: 'ARCHIVE // FL-850-SWAMP',
+    desc: 'SYNTHWAVE GENETICS. NEON PHENOTYPE VALIDATED.'
   },
   {
-    url: '/sidebar-rosin.png',
-    label: 'ARCHIVE // ID-888-EXTRACT',
-    desc: 'TERPENE VOLATILITY STATUS: STABLE.'
+    url: '/florida-swamp.png',
+    label: 'ARCHIVE // FL-407-EVERGLADE',
+    desc: 'ENVIRONMENTAL STRESS TEST: HIGH HUMIDITY RESISTANCE.'
   },
   {
-    url: '/sidebar-leaf.png',
-    label: 'ARCHIVE // ID-101-MORPHOLOGY',
-    desc: 'MORPHOLOGICAL WIREFRAME VALIDATED.'
+    url: '/florida-resin.png',
+    label: 'ARCHIVE // FL-727-RESIN',
+    desc: 'CONCENTRATE PURITY: 99.8% TROPICAL SANDS.'
   }
 ];
 
-function App() {
+const Florida = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [imgIndex, setImgIndex] = useState(0);
 
@@ -51,29 +51,20 @@ function App() {
     return () => clearInterval(timer);
   }, []);
 
-  const filteredCultivators = useMemo((): Cultivator[] => {
-    return (marketData.cultivators as Cultivator[]).filter(c => {
+  const filteredCultivators = useMemo(() => {
+    return floridaData.cultivators.filter(c => {
+        const brands = c.brands || [];
       const matchesSearch = c.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        c.brands.some(b => b.toLowerCase().includes(searchTerm.toLowerCase())) ||
-        (c.head_grower !== "Not Publicly Listed" && c.head_grower.toLowerCase().includes(searchTerm.toLowerCase()));
+        brands.some(b => b.toLowerCase().includes(searchTerm.toLowerCase())) ||
+        (c.facility && c.facility.toLowerCase().includes(searchTerm.toLowerCase()));
       return matchesSearch;
     });
   }, [searchTerm]);
 
-  const categories = useMemo(() => {
-    const types = Array.from(new Set(marketData.cultivators.map(c => c.license_type)));
-    return types.map(type => ({
-      name: type,
-      items: filteredCultivators
-        .filter(c => c.license_type === type)
-        .sort((a, b) => a.name.localeCompare(b.name))
-    }));
-  }, [filteredCultivators]);
-
   const totalStats = {
-    cultivators: marketData.cultivators.length,
-    brands: new Set(marketData.cultivators.flatMap(c => c.brands)).size,
-    partners: marketData.cultivators.flatMap(c => c.brands).filter(b => b.includes('(Partner)')).length
+    cultivators: floridaData.cultivators.length,
+    brands: new Set(floridaData.cultivators.flatMap(c => c.brands)).size,
+    partners: floridaData.cultivators.flatMap(c => c.brands).filter(b => b.includes('(Partner)')).length
   };
 
   return (
@@ -81,17 +72,11 @@ function App() {
       {/* Header Row */}
       <header className="flex flex-row justify-between items-center border-b border-border-muted pb-2 mb-2">
         <h1 className="text-2xl font-black text-lime-vibrant leading-none uppercase">
-          Illinois Cannabis Directory
+          <span className="text-pink-vibrant">FLORIDA</span> Cannabis Directory
         </h1>
         <div className="flex items-center gap-6">
-          <Link to="/florida" className="text-lime-vibrant text-[10px] hover:underline uppercase font-bold tracking-tighter">
-            &gt;&gt; Switch to Florida Market
-          </Link>
-          <Link to="/archives" className="text-pink-vibrant text-[10px] hover:underline uppercase font-bold tracking-tighter">
-            Genetic Archives &amp; Lineage &gt;&gt;
-          </Link>
-          <Link to="/breeders" className="text-pink-vibrant text-[10px] hover:underline uppercase font-bold tracking-tighter">
-            Breeders List &gt;&gt;
+           <Link to="/" className="text-lime-vibrant text-[10px] hover:underline uppercase font-bold tracking-tighter">
+            &lt;&lt; Switch to Illinois Market
           </Link>
           <div className="flex gap-2">
             <button className="text-[10px] text-pink-vibrant hover:text-white uppercase font-bold border border-pink-vibrant/30 px-2 py-1">Submit Site</button>
@@ -109,29 +94,36 @@ function App() {
             className="bg-black border-none text-lime-vibrant px-2 py-0.5 text-xs w-full focus:outline-none"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
+            placeholder="Search cultivators, brands, or cities..."
           />
         </div>
       </nav>
 
       {/* Main Directory List */}
       <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
-        {categories.map((cat, idx) => (
-          <div key={idx} className="directory-box">
+          <div className="directory-box col-span-1 md:col-span-2">
             <div className="directory-header">
-              {cat.name} ({cat.items.length})
+              OMMU LICENSED OPERATORS ({filteredCultivators.length})
             </div>
-            <div className="p-4 space-y-8">
-              {cat.items.map((item, i) => (
+            <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+              {filteredCultivators.map((item, i) => (
                 <div key={i} className="text-[11px] leading-relaxed">
-                  <div className="mb-1">
-                    <Link
-                      to={`/cultivators/${item.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
-                      className="text-lime-vibrant font-black text-sm hover:text-pink-vibrant hover:underline neon-text-lime"
-                    >
-                      {item.name}
-                    </Link>
-                    <span className="text-lime-muted/60 ml-2">
-                      - {Array.isArray(item.facility_location) ? item.facility_location[0] : item.facility_location}, IL
+                  <div className="mb-1 flex justify-between items-start">
+                    <div>
+                        <a
+                        href={item.website}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-lime-vibrant font-black text-sm hover:text-pink-vibrant hover:underline neon-text-lime"
+                        >
+                        {item.name}
+                        </a>
+                        <div className="text-lime-muted/60 text-[9px]">
+                        License: {item.license}
+                        </div>
+                    </div>
+                    <span className="text-lime-muted/60 ml-2 text-right">
+                      {item.facility}, FL
                     </span>
                   </div>
 
@@ -153,21 +145,13 @@ function App() {
                       );
                     })}
                   </div>
-
-                  {item.head_grower !== "Not Publicly Listed" && (
-                    <div className="text-lime-muted/50">
-                      <span className="uppercase font-extrabold text-[8px] mr-2 tracking-widest">Architect:</span>
-                      <span className="text-lime-muted/80 font-medium">{item.head_grower}</span>
-                    </div>
-                  )}
                 </div>
               ))}
-              {cat.items.length === 0 && (
-                <div className="text-xs italic text-neo-gray">No entries in this category.</div>
+              {filteredCultivators.length === 0 && (
+                <div className="text-xs italic text-neo-gray">No entries found.</div>
               )}
             </div>
           </div>
-        ))}
 
         {/* 3rd Column: Visual Archive */}
         <div className="directory-box hidden lg:flex flex-col h-[700px] overflow-hidden group relative">
@@ -175,20 +159,20 @@ function App() {
             <span>{SIDEBAR_IMAGES[imgIndex].label}</span>
             <div className="flex gap-2">
               <span className="text-[8px] text-border-muted">{imgIndex + 1}/{SIDEBAR_IMAGES.length}</span>
-              <span className="animate-pulse text-lime-vibrant">● CONNECTED</span>
+              <span className="animate-pulse text-lime-vibrant">● LIVE FEED</span>
             </div>
           </div>
           <div className="flex-1 bg-black relative overflow-hidden">
             <img
               key={imgIndex}
               src={SIDEBAR_IMAGES[imgIndex].url}
-              alt="Cannabis Visual Archive"
+              alt="Florida Cannabis Visual Archive"
               className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 animate-digital-fade"
             />
             {/* Retro UI Overlays */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
             <div className="absolute top-4 left-4 p-2 bg-black/60 border border-lime-vibrant/30 backdrop-blur-sm">
-              <div className="text-[8px] text-lime-vibrant uppercase tracking-tighter">Scan Progress</div>
+              <div className="text-[8px] text-lime-vibrant uppercase tracking-tighter">Satellite Uplink</div>
               <div className="w-16 h-1 bg-lime-vibrant/20 mt-1">
                 <div className="h-full bg-lime-vibrant w-3/4 animate-[pulse_2s_infinite]"></div>
               </div>
@@ -213,10 +197,10 @@ function App() {
       <footer className="mt-auto pt-12">
         <div className="directory-box bg-black p-4 stats-bar flex flex-col md:flex-row justify-between items-center text-[10px]">
           <div>
-            TOTALS: {totalStats.cultivators} CULTIVATORS / {totalStats.brands} BRANDS / {totalStats.partners} PARTNER_BRANDS
+            TOTALS: {totalStats.cultivators} LICENSED MMTCs / {totalStats.brands} BRANDS
           </div>
           <div>
-            CREATED BY WEED-DIRECTORY // (C) 2026
+            CREATED BY WEED-DIRECTORY // (C) 2026 // FLORIDA MARKET
           </div>
         </div>
       </footer>
@@ -224,4 +208,4 @@ function App() {
   );
 }
 
-export default App;
+export default Florida;

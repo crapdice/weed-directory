@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
+import Florida from './pages/Florida.tsx'
 import Sources from './pages/Sources.tsx'
 import Breeders from './pages/Breeders.tsx'
 import Archives from './pages/Archives.tsx'
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/florida" element={<Florida />} />
         <Route path="/sources" element={<Sources />} />
         <Route path="/breeders" element={<Breeders />} />
         <Route path="/archives" element={<Archives />} />

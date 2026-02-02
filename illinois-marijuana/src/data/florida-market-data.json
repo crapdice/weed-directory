@@ -1,0 +1,293 @@
+{
+    "market_region": "Florida",
+    "data_as_of": "February 2026",
+    "cultivators": [
+        {
+            "name": "Trulieve, Inc.",
+            "license": "MMTC-2015-0005",
+            "facility": "Quincy",
+            "website": "https://trulieve.com",
+            "social": "https://instagram.com/trulieve_",
+            "brands": [
+                "Trulieve",
+                "Cultivar Collection",
+                "Alien Labs (Partner)",
+                "Connected (Partner)",
+                "Khalifa Kush (Partner)"
+            ]
+        },
+        {
+            "name": "The Flowery, LLC",
+            "license": "MMTC-2019-0020",
+            "facility": "Homestead",
+            "website": "https://theflowery.co",
+            "social": "https://instagram.com/theflowery.co",
+            "brands": [
+                "The Flowery",
+                "710 Labs (Partner)",
+                "Backpack Boyz (Partner)",
+                "Preferred Gardens (Partner)",
+                "Josh D (Partner)"
+            ]
+        },
+        {
+            "name": "Altmed Florida (MÜV)",
+            "license": "MMTC-2017-0010",
+            "facility": "Apollo Beach",
+            "website": "https://muvfl.com",
+            "social": "https://instagram.com/muv_fl",
+            "brands": [
+                "MÜV",
+                "Savvy",
+                "Verano Reserve",
+                "BITS",
+                "Encore"
+            ]
+        },
+        {
+            "name": "Liberty Health Sciences",
+            "license": "MMTC-2015-0002",
+            "facility": "Gainesville",
+            "website": "https://ayrwellness.com",
+            "social": "https://instagram.com/ayrcannabis",
+            "brands": [
+                "Ayr Cannabis",
+                "Kynd",
+                "Later Days",
+                "Haze",
+                "Big Pete's Treats (Partner)"
+            ]
+        },
+        {
+            "name": "Curaleaf Florida, LLC",
+            "license": "MMTC-2015-0001",
+            "facility": "Alachua",
+            "website": "https://curaleaf.com",
+            "social": "https://instagram.com/curaleaf.usa",
+            "brands": [
+                "Curaleaf",
+                "Grassroots",
+                "Select",
+                "JAMS",
+                "Find"
+            ]
+        },
+        {
+            "name": "Sunburn Cannabis",
+            "license": "MMTC-2017-0012",
+            "facility": "Eustis",
+            "website": "https://sunburncannabis.com",
+            "social": "https://instagram.com/sunburncannabis",
+            "brands": [
+                "Sunburn",
+                "Piatella"
+            ]
+        },
+        {
+            "name": "GTI Florida, LLC",
+            "license": "MMTC-2017-0013",
+            "facility": "Homestead",
+            "website": "https://risecannabis.com",
+            "social": "https://instagram.com/risecannabis",
+            "brands": [
+                "Rise",
+                "Rythm",
+                "Good Green",
+                "Dogwalkers",
+                "&Shine"
+            ]
+        },
+        {
+            "name": "Sunnyside* (Cresco)",
+            "license": "MMTC-2017-0008",
+            "facility": "Indiantown",
+            "website": "https://sunnyside.shop",
+            "social": "https://instagram.com/sunnysidefl",
+            "brands": [
+                "Sunnyside*",
+                "Cresco",
+                "High Supply",
+                "FloraCal Farms",
+                "One Plant (Legacy)"
+            ]
+        },
+        {
+            "name": "Jungle Boys Florida",
+            "license": "MMTC-2019-0015",
+            "facility": "Ocala",
+            "website": "https://jungleboysfl.com",
+            "social": "https://instagram.com/jungleboysflorida",
+            "brands": [
+                "Jungle Boys"
+            ]
+        },
+        {
+            "name": "Cookies Florida, Inc.",
+            "license": "MMTC-2019-0018",
+            "facility": "DeLand",
+            "website": "https://cookies.co",
+            "social": "https://instagram.com/cookiesflorida",
+            "brands": [
+                "Cookies",
+                "Lemonnade",
+                "Minntz",
+                "Grandiflora"
+            ]
+        },
+        {
+            "name": "Planet 13 / VidaCann",
+            "license": "MMTC-2017-0009",
+            "facility": "Jacksonville",
+            "website": "https://vidacann.com",
+            "social": "https://instagram.com/vidacannflorida",
+            "brands": [
+                "VidaCann",
+                "Planet 13",
+                "Tikun Olam (Partner)",
+                "Veda Warrior (Partner)"
+            ]
+        },
+        {
+            "name": "Goldflower Cannabis",
+            "license": "MMTC-2019-0019",
+            "facility": "Parrish",
+            "website": "https://goldflowerfl.com",
+            "social": "https://instagram.com/goldflowerfl",
+            "brands": [
+                "Goldflower",
+                "Ideal Cannabis (Partner)"
+            ]
+        },
+        {
+            "name": "GrowHealthy",
+            "license": "MMTC-2016-0007",
+            "facility": "Lake Wales",
+            "website": "https://growhealthy.com",
+            "social": "https://instagram.com/growhealthyfl",
+            "brands": [
+                "GrowHealthy",
+                "MPX (Partner)",
+                "The Last Pick"
+            ]
+        },
+        {
+            "name": "Surterra Florida, LLC",
+            "license": "MMTC-2015-0004",
+            "facility": "Tampa",
+            "website": "https://surterra.com",
+            "social": "https://instagram.com/surterrawellness",
+            "brands": [
+                "Surterra Wellness",
+                "Float",
+                "Coral Reefer",
+                "Papa's Herb (Partner)"
+            ]
+        },
+        {
+            "name": "CHT Medical (FLUENT)",
+            "license": "MMTC-2015-0003",
+            "facility": "Lake City",
+            "website": "https://getfluent.com",
+            "social": "https://instagram.com/fluent_cannabis",
+            "brands": [
+                "FLUENT",
+                "Black Line"
+            ]
+        },
+        {
+            "name": "Mint Cannabis",
+            "license": "MMTC-2017-0011",
+            "facility": "Lakeland",
+            "website": "https://mintcannabis.com",
+            "social": "https://instagram.com/mintcannabis",
+            "brands": [
+                "Mint Cannabis",
+                "Seed & Strain",
+                "Triple Seven (Partner)"
+            ]
+        },
+        {
+            "name": "Sanctuary Cannabis",
+            "license": "MMTC-2019-0017",
+            "facility": "Apopka",
+            "website": "https://sanctuarymed.com",
+            "social": "https://instagram.com/sanctuary_cannabis",
+            "brands": [
+                "Sanctuary"
+            ]
+        },
+        {
+            "name": "Insa, LLC",
+            "license": "MMTC-2019-0016",
+            "facility": "Auburndale",
+            "website": "https://insa.com",
+            "social": "https://instagram.com/insacannabis",
+            "brands": [
+                "Insa"
+            ]
+        },
+        {
+            "name": "Green Dragon",
+            "license": "MMTC-2019-0021",
+            "facility": "Palatka",
+            "website": "https://greendragonfl.com",
+            "social": "https://instagram.com/greendragon_fl",
+            "brands": [
+                "Green Dragon",
+                "Magnus",
+                "Fuel"
+            ]
+        },
+        {
+            "name": "Revolution Florida",
+            "license": "MMTC-2019-0022",
+            "facility": "Indiantown",
+            "website": "https://revcanna.com",
+            "social": "https://instagram.com/revolution_fl",
+            "brands": [
+                "Revolution",
+                "Tales & Travels"
+            ]
+        },
+        {
+            "name": "Eden Florida, LLC",
+            "license": "MMTC-2023-0025",
+            "facility": "Eustis",
+            "website": "https://edenflorida.com",
+            "social": "https://instagram.com/edenflorida",
+            "brands": [
+                "Eden"
+            ]
+        },
+        {
+            "name": "Fino Cannabis",
+            "license": "MMTC-2016-0006",
+            "facility": "Bradenton",
+            "website": "https://livefino.com",
+            "social": "https://instagram.com/livefino",
+            "brands": [
+                "Fino"
+            ]
+        },
+        {
+            "name": "Prosperity Medical",
+            "license": "MMTC-2023-0023",
+            "facility": "Alachua",
+            "website": "https://prosperitymedical.com",
+            "social": "https://instagram.com/prosperity_fl",
+            "brands": [
+                "Prosperity"
+            ]
+        },
+        {
+            "name": "TheraTrue Florida",
+            "license": "MMTC-2023-0024",
+            "facility": "Tallahassee",
+            "website": "https://theratrue.com",
+            "social": "https://instagram.com/theratruefl",
+            "brands": [
+                "TheraTrue"
+            ]
+        }
+    ]
+}
