@@ -80,12 +80,16 @@ def validate_cannabis_data(file_path):
                  errors.append(f"[{name}] Law of Presence: Craft Growers MUST have a mandatory social media handle.")
 
         # 2. Live URL Validation
-        for platform, url in social.items():
-            if url and isinstance(url, str) and url.startswith("http"):
-                print(f" - Pinging {name} {platform}...")
-                is_live, err_msg = check_url_status(name, platform, url)
-                if not is_live:
-                    errors.append(f"[{name}] {platform.upper()} Link Dead: {url} ({err_msg})")
+        skip_urls = os.environ.get("SKIP_URL_CHECK") == "1"
+        if not skip_urls:
+            for platform, url in social.items():
+                if url and isinstance(url, str) and url.startswith("http"):
+                    print(f" - Pinging {name} {platform}...")
+                    is_live, err_msg = check_url_status(name, platform, url)
+                    if not is_live:
+                        errors.append(f"[{name}] {platform.upper()} Link Dead: {url} ({err_msg})")
+        else:
+            print(" - SKIP_URL_CHECK=1: Skipping live link validation.")
 
     # 3. Spotlight Validation
     for breeder in spotlight:

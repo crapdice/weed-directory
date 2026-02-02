@@ -108,7 +108,7 @@ export default function CultivatorDetail() {
                                     const cleanBrand = brand.replace(' (Partner)', '');
                                     return (
                                         <div key={i} className={`p-3 border border-neo-gray/30 text-center flex flex-col justify-center ${isPartner ? 'bg-hot-pink/5 border-hot-pink/30' : 'bg-black'}`}>
-                                            <span className={`text-[11px] font-bold ${isPartner ? 'text-hot-pink italic' : 'text-white'}`}>{cleanBrand}</span>
+                                            <span className={`text-[11px] font-bold ${isPartner ? 'text-hot-pink italic cursor-help' : 'text-white'}`} title={isPartner ? `Regulatory Disclosure: Produced by ${cultivator.name}` : undefined}>{cleanBrand}</span>
                                             {isPartner && <span className="text-[8px] text-neo-gray mt-1 uppercase">Third-Party Partner</span>}
                                         </div>
                                     );

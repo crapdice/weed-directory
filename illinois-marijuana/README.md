@@ -1,12 +1,12 @@
-# Deep Resin: The Metaphysical Directory of Illinois Cannabis (2026)
+# Illinois Cannabis Directory: Digital Portal (2026)
 
-A culture-forward, high-fidelity digital archive tracking the industrial giants and boutique wizards of the Illinois cannabis landscape.
+A high-performance, DMOZ-inspired digital archive tracking the industrial giants and boutique wizards of the Illinois cannabis landscape.
 
-## 🌀 Visual Identity
-- **Weird-Luxe Aesthetic**: A 1970s psychedelic grit meets 2026 culture-forward logic.
-- **Dynamic Elements**: Liquid-ripple micro-interactions, 70s film-stock grain, and staggering "Sticker-Wall" masonry grids.
-- **Glassmorphism**: High-end frosted glassware effects for internal operator cards.
-- **QC Compliance**: All data is verified through a custom "Quality Control" stamp system to ensure source-of-truth accuracy.
+## 💾 Visual Identity
+- **90s SEO Portal**: High-contrast directory aesthetics inspired by early web portals (DMOZ, Yahoo!, Geocities).
+- **Hard-Coded Grid**: A robust, zero-glassmorphism masonry structure using `directory-box` and `directory-header` containers.
+- **Color Palette**: Neon Lime (#00FF00) and Hot Pink (#FF00FF) on a high-contrast Black/Retro-Bg backdrop.
+- **Low-Fi Fidelity**: Use of mono-spaced system fonts and heavy borders for a nostalgic "database" feel.
 
 ## 🛠️ Technological Frequency
 - **Core**: React 19 + Vite + TypeScript

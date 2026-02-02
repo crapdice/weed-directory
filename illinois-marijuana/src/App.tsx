@@ -79,6 +79,37 @@ function App() {
         </div>
       </nav>
 
+      {/* Phase 3.1: Breeder Spotlight */}
+      <section className="mb-12">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="bg-hot-pink text-black text-[9px] font-black px-2 py-0.5 uppercase">Featured</span>
+          <h2 className="text-white font-bold text-xs uppercase tracking-widest">Master Breeders Spotlight</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {marketData.famous_growers_spotlight.slice(0, 3).map((breeder, i) => (
+            <div key={i} className="directory-box p-4 bg-lime-green/5 border-neo-gray hover:border-lime-green transition-colors group">
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="text-lime-green font-bold text-sm uppercase">{breeder.name}</h3>
+                <span className="text-[8px] text-neo-gray font-mono">[{breeder.cultivator.substring(0, 8).toUpperCase()}]</span>
+              </div>
+              <p className="text-[10px] text-neo-gray leading-tight mb-3 line-clamp-2 italic">
+                "{breeder.profile}"
+              </p>
+              <div className="flex flex-wrap gap-1">
+                {breeder.legendary_strains.slice(0, 2).map((strain, si) => (
+                  <span key={si} className="text-[9px] border border-neo-gray px-1 text-white bg-black group-hover:border-hot-pink/50">
+                    {strain}
+                  </span>
+                ))}
+                <Link to="/breeders" className="text-[9px] text-hot-pink font-bold ml-auto hover:underline">
+                  MORE_GENETICS &gt;&gt;
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Main Directory List */}
       <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
         {categories.map((cat, idx) => (
@@ -108,7 +139,12 @@ function App() {
                       const cleanBrand = brand.replace(' (Partner)', '');
                       return (
                         <span key={bi}>
-                          <span className={isPartner ? "text-hot-pink italic" : ""}>{cleanBrand}</span>
+                          <span
+                            className={`text-[11px] font-bold ${isPartner ? 'text-hot-pink italic cursor-help' : 'text-white'}`}
+                            title={isPartner ? `Regulatory Disclosure: Produced by ${item.name}` : undefined}
+                          >
+                            {cleanBrand}
+                          </span>
                           {bi < item.brands.length - 1 && <span className="text-neo-gray mx-1">/</span>}
                         </span>
                       );

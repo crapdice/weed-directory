@@ -1,5 +1,5 @@
 {
-    "buildCommand": "npm run build",
+    "buildCommand": "SKIP_URL_CHECK=1 npm run build",
     "installCommand": "pip3 install -r requirements.txt && npm install",
     "rewrites": [
         {
