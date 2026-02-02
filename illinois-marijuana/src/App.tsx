@@ -44,38 +44,33 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col max-w-[1200px] mx-auto px-4 py-6 font-mono selection:bg-hot-pink selection:text-black">
-      {/* Header */}
-      <header className="border-b border-neo-gray mb-6 pb-4 flex justify-between items-end">
-        <div>
-          <div className="text-[10px] text-neo-gray mb-1 uppercase tracking-tight">
-            Index / Illinois / Marijuana Cultivators
-          </div>
-          <h1 className="text-3xl font-black text-lime-green leading-none uppercase">
-            Illinois Cannabis Directory
-          </h1>
-        </div>
-        <div className="text-right">
-          <Link to="/breeders" className="text-hot-pink text-xs hover:underline uppercase font-bold">
+    <div className="min-h-screen flex flex-col max-w-[1200px] mx-auto px-4 py-2 font-mono selection:bg-hot-pink selection:text-black">
+      {/* Header Row */}
+      <header className="flex flex-row justify-between items-center border-b border-neo-gray pb-2 mb-2">
+        <h1 className="text-2xl font-black text-lime-green leading-none uppercase">
+          Illinois Cannabis Directory
+        </h1>
+        <div className="flex items-center gap-6">
+          <Link to="/breeders" className="text-hot-pink text-[10px] hover:underline uppercase font-bold">
             Genetic Archives &gt;&gt;
           </Link>
+          <div className="flex gap-2">
+            <button className="text-[10px] text-neo-gray hover:text-white uppercase font-bold border border-neo-gray px-2 py-1">Submit Site</button>
+            <Link to="/sources" className="text-[10px] text-neo-gray hover:text-white uppercase font-bold border border-neo-gray px-2 py-1">Data Sources</Link>
+          </div>
         </div>
       </header>
 
-      {/* Navigation / Search */}
-      <nav className="directory-box p-3 mb-8 flex flex-col md:flex-row gap-4 items-center">
+      {/* Compact Search Bar */}
+      <nav className="directory-box h-10 mb-4 flex items-center px-3">
         <div className="flex-1 flex items-center gap-2">
           <span className="text-xs text-hot-pink font-bold uppercase">Search:</span>
           <input
             type="text"
-            className="bg-black border border-neo-gray text-lime-green px-2 py-1 text-xs w-full max-w-sm focus:outline-none focus:border-hot-pink"
+            className="bg-black border-none text-lime-green px-2 py-0.5 text-xs w-full focus:outline-none"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-        </div>
-        <div className="flex gap-4">
-          <button className="text-[10px] text-neo-gray hover:text-white uppercase font-bold border border-neo-gray px-2 py-1">Submit Site</button>
-          <Link to="/sources" className="text-[10px] text-neo-gray hover:text-white uppercase font-bold border border-neo-gray px-2 py-1">Data Sources</Link>
         </div>
       </nav>
 
