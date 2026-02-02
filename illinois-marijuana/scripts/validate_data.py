@@ -1,14 +1,18 @@
 import json
 import sys
 import os
-import requests
+try:
+    import requests
+    HAS_REQUESTS = True
+except ImportError:
+    HAS_REQUESTS = False
 
 def check_url_status(name, label, url):
     """
     Pings a URL to verify it returns a 200 OK status.
-    Uses User-Agent and GET request for maximum compatibility with bot-filtered sites.
-    Specials: treating Status 999 (LinkedIn) as a soft-pass since it confirms the site is active but blocking bots.
     """
+    if not HAS_REQUESTS:
+        return False, "requests library not installed"
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
         response = requests.get(url, headers=headers, timeout=10, stream=True, allow_redirects=True)
